@@ -310,7 +310,7 @@ has no title bar. Fair warning.
 Find all apps with `name`
 
     App.allWithName = (name) ->
-      _.filter App.runningApps(), (app) -> app.name() is name
+      _.filter App.all(), (app) -> app.name() is name
 
     App.byName = (name) ->
       app = _.first App.allWithName name
