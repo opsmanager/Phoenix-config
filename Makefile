@@ -1,3 +1,3 @@
 init:
-	-Rm ~/.phoenix.js
-	cp phoenix.js.litcoffee ~/.phoenix.js
+	coffee -c phoenix.js.litcoffee
+	mv phoenix.js.js ~/.phoenix.js
